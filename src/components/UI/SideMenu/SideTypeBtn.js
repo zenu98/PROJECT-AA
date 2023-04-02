@@ -1,10 +1,10 @@
-import classes from "./UI/SideMenu.module.css";
+import classes from "./SideMenu.module.css";
 
 import { BiCoffeeTogo, BiCameraMovie, BiDesktop } from "react-icons/bi";
 import { GiMicrophone } from "react-icons/gi";
 
 import { useDispatch } from "react-redux";
-import { markerActions } from "../store/marker-slice";
+import { markerActions } from "../../../store/marker-slice";
 
 const SideTypeBtn = () => {
   const dispatch = useDispatch();

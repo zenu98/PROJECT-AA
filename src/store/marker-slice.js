@@ -3,6 +3,9 @@ import { createSlice, current } from "@reduxjs/toolkit";
 const markerSlice = createSlice({
   name: "marker",
   initialState: {
+    markerType: "All",
+    selectedMarker: "",
+    markerIsClicked: false,
     dummy: [
       {
         locationX: 37.4882,
@@ -23,6 +26,15 @@ const markerSlice = createSlice({
         thumbnail: "dummybg4.jpg",
       },
       {
+        locationX: 37.48,
+        locationY: 126.84,
+        title: "cafe",
+        img: "coffee",
+        name: "Dummy5",
+        description: "aaaaaaaaaaaaaaaaaaaa",
+        thumbnail: "dummybg5.jpg",
+      },
+      {
         locationX: 37.489,
         locationY: 126.84,
         title: "cinema",
@@ -41,13 +53,19 @@ const markerSlice = createSlice({
         thumbnail: "dummy.png",
       },
     ],
-    markerType: "All",
   },
   reducers: {
     markerTypeHandler(state, action) {
       const markerType = action.payload;
       console.log(action.payload);
       state.markerType = markerType.title;
+      state.markerIsClicked = false;
+    },
+    markerListHandler(state, action) {
+      const markerType = action.payload;
+      console.log(action.payload);
+      state.selectedMarker = markerType.name;
+      state.markerIsClicked = true;
     },
   },
 });

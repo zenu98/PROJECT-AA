@@ -1,0 +1,36 @@
+.listBox {
+  padding: 15px;
+  height: 80%;
+  overflow: auto;
+}
+.listBox::-webkit-scrollbar {
+  width: 7px; /* 스크롤바의 너비 */
+}
+
+.listBox::-webkit-scrollbar-thumb {
+  height: 80%; /* 스크롤바의 길이 */
+  background: #c4c6c8; /* 스크롤바의 색상 */
+  border-radius: 10px;
+}
+
+.listBox::-webkit-scrollbar-track {
+  background: rgba(233, 236, 239); /*스크롤바 뒷 배경 색상*/
+}
+
+.thumbnailBox {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  height: 180px;
+}
+.thumbnailImage {
+  width: 100%;
+  height: 100%;
+}
+.nameText {
+  margin-bottom: 0;
+}
+.descriptionText {
+  word-break: break-all;
+  margin-top: 0;
+}

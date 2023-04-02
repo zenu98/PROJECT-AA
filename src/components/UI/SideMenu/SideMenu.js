@@ -1,8 +1,8 @@
 import classes from "./SideMenu.module.css";
 import { useState } from "react";
 import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
-import SideTypeBtn from "../SideTypeBtn";
-import SideList from "../SideList";
+import SideTypeBtn from "./SideTypeBtn";
+import SideList from "./SideList";
 
 const SideMenu = () => {
   const [toggle, setToggle] = useState(false);

@@ -15,6 +15,7 @@ const markerSlice = createSlice({
         name: "Dummy1",
         description: "comfortable, classic cafe",
         thumbnail: "dummybg1.jpg",
+        clicked: false,
       },
       {
         locationX: 37.504,
@@ -24,6 +25,7 @@ const markerSlice = createSlice({
         name: "Dummy2",
         description: "low price, high quality cafe",
         thumbnail: "dummybg4.jpg",
+        clicked: false,
       },
       {
         locationX: 37.48,
@@ -33,6 +35,7 @@ const markerSlice = createSlice({
         name: "Dummy5",
         description: "aaaaaaaaaaaaaaaaaaaa",
         thumbnail: "dummybg5.jpg",
+        clicked: false,
       },
       {
         locationX: 37.489,
@@ -42,6 +45,7 @@ const markerSlice = createSlice({
         name: "Dummy3",
         description: "aaaaaaaaaaaaaaaaaaaa",
         thumbnail: "dummybg5.jpg",
+        clicked: false,
       },
       {
         locationX: 37.49,
@@ -51,6 +55,7 @@ const markerSlice = createSlice({
         name: "Dummy4",
         description: "bbbbbbbbbbbbbb",
         thumbnail: "dummy.png",
+        clicked: false,
       },
     ],
   },

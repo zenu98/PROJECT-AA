@@ -1,0 +1,65 @@
+.listContainer {
+  position: relative;
+  padding: 10px;
+}
+
+.list {
+  display: table;
+  margin: 0 auto;
+  padding: 10px;
+  width: 350px;
+  table-layout: auto;
+  text-align: center;
+}
+
+li,
+ol,
+ul {
+  list-style: none;
+}
+
+.icon {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  object-fit: cover;
+}
+.icon-clicked {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  object-fit: cover;
+  color: white;
+}
+.iconContainer {
+  display: table-cell;
+  border: 1px solid #ededed;
+  vertical-align: middle;
+  border-radius: 5px;
+  table-layout: auto;
+  cursor: pointer;
+  padding: 10px;
+}
+.iconContainer-clicked {
+  display: table-cell;
+  border: 1px solid #ededed;
+  background-color: #0475f4;
+  vertical-align: middle;
+  border-radius: 5px;
+  table-layout: auto;
+  cursor: pointer;
+  padding: 10px;
+}
+.tabName {
+  font-size: 1rem;
+}
+.tabName-clicked {
+  font-size: 1rem;
+  color: white;
+}
+
+.icon-name-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

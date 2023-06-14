@@ -1,0 +1,53 @@
+.menu_section_container {
+  display: block;
+  height: 50%;
+  overflow: auto;
+
+  /* 스크롤바 스타일 적용 */
+  &::-webkit-scrollbar {
+    width: 7px; /* 스크롤바의 너비 */
+  }
+
+  &::-webkit-scrollbar-thumb {
+    height: 40%; /* 스크롤바의 길이 */
+    background: #c4c6c8; /* 스크롤바의 색상 */
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: rgba(233, 236, 239, 1); /* 스크롤바 뒷 배경 색상 */
+  }
+}
+
+.menu_section_contents {
+  position: relative;
+  .menu_section {
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, helvetica,
+      "Apple SD Gothic Neo", sans-serif;
+
+    &.border {
+      border-top: 1px solid;
+      border-top-color: #ecf0f2;
+    }
+    .menu {
+      display: flex;
+      align-items: center;
+      position: relative;
+      padding: 22px 18px;
+      .menu_image {
+        width: 100px;
+        height: 100px;
+        margin-right: 15px;
+        img {
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .menu_info {
+      }
+    }
+  }
+}

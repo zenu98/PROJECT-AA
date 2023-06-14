@@ -1,0 +1,255 @@
+{
+  "dummy": [
+    {
+      "locationX": 37.487723,
+      "locationY": 126.824347,
+      "title": "cafe",
+      "img": "coffee",
+      "name": "이디야 성공회대점",
+      "description": "이디야 성공회대점입니다^------^",
+      "thumbnail": "이디야.jpg",
+      "price": 3200,
+      "bookmark": false,
+      "clicked": false,
+      "index": {
+        "address": "항동 1번지 2층 201호 동삼파크빌라 구로구 서울특별시 KR",
+        "call": "0507-1341-9118",
+        "영업시간": "09:00~18:00",
+        "link": ""
+      },
+      "menu": [
+        {
+          "food": "(L)ICED 카페 아메리카노",
+          "price": 3200
+        },
+        {
+          "food": "(EX)ICED 카페 아메리카노",
+          "price": 4200
+        },
+        {
+          "food": "(L)ICED 넛츠 크림 라떼",
+          "price": 4700
+        },
+        {
+          "food": "(L)ICED 카페 라뗴",
+          "price": 4200
+        }
+      ]
+    },
+    {
+      "locationX": 37.488997,
+      "locationY": 126.824798,
+      "title": "cafe",
+      "img": "coffee",
+      "name": "커피클래식",
+      "description": "성공회대학교 정문에서 3분거리. 온수역 2번 출구에서 6분거리.",
+      "thumbnail": "커피클래식.jpg",
+      "price": 3000,
+      "clicked": false,
+      "index": {
+        "address": "서울 구로구 경인로 18 화랑상가",
+        "call": "02-2610- 4388",
+        "영업시간": "09:00 - 22:00",
+        "link": ""
+      },
+      "menu": [
+        {
+          "food": "수제요거트",
+          "price": 4000
+        },
+        {
+          "food": "아메리카노",
+          "price": 3000
+        },
+        {
+          "food": "젤라또 아이스크림",
+          "price": 3800
+        }
+      ]
+    },
+    {
+      "locationX": 37.487584,
+      "locationY": 126.825245,
+      "title": "cafe",
+      "img": "coffee",
+      "name": "자연드림 성공회대점",
+      "description": "자드.",
+      "thumbnail": "자연드림.jpg",
+      "price": 2500,
+      "clicked": false,
+      "index": {
+        "address": "서울 구로구 연동로 320",
+        "call": "02-2686-0044",
+        "영업시간": "",
+        "link": ""
+      },
+      "menu": [
+        {
+          "food": "에스프레소 핫",
+          "price": 2600
+        },
+        {
+          "food": "아메리카노 핫",
+          "price": 2200
+        },
+        {
+          "food": "카페라떼 핫",
+          "price": 3000
+        },
+        {
+          "food": "카푸치노 핫",
+          "price": 3000
+        },
+        {
+          "food": "바닐라라떼",
+          "price": 3500
+        },
+        {
+          "food": "토피넛라떼",
+          "price": 3600
+        },
+        {
+          "food": "초코녹차라떼",
+          "price": 3600
+        },
+        {
+          "food": "아이스티",
+          "price": 2800
+        },
+        {
+          "food": "레몬에이드",
+          "price": 3300
+        }
+      ]
+    },
+    {
+      "locationX": 37.4855303,
+      "locationY": 126.810265,
+      "title": "karaoke",
+      "img": "karaoke",
+      "name": "동전 노래연습장",
+      "description": "역곡역 2번 출구에서176m",
+      "thumbnail": "karaokebg.jpg",
+      "price": 1000,
+      "clicked": false,
+      "index": {
+        "address": "경기 부천시 부일로 724",
+        "call": "",
+        "영업시간": "",
+        "link": ""
+      }
+    },
+    {
+      "locationX": 37.485232,
+      "locationY": 126.81012,
+      "title": "karaoke",
+      "img": "karaoke",
+      "name": "찐코인노래연습장",
+      "description": "역곡역 2번 출구에서182m",
+      "thumbnail": "karaokebg.jpg",
+      "price": 1000,
+      "clicked": false,
+      "index": {
+        "address": "경기 부천시 부일로 722",
+        "call": "",
+        "영업시간": "",
+        "link": ""
+      }
+    },
+    {
+      "locationX": 37.484421,
+      "locationY": 126.811018,
+      "title": "karaoke",
+      "img": "karaoke",
+      "name": "게임토피아노래방",
+      "description": "역곡역 1번 출구에서146m",
+      "thumbnail": "karaokebg.jpg",
+      "price": 1000,
+      "clicked": false,
+      "index": {
+        "address": "경기 부천시 경인로 505",
+        "call": "",
+        "영업시간": "",
+        "link": ""
+      }
+    },
+    {
+      "locationX": 37.484858,
+      "locationY": 126.81423,
+      "title": "mart",
+      "img": "shop",
+      "name": "홈플러스 부천소사점",
+      "description": "국철 1호선 역곡역 남부출구에 위치",
+      "thumbnail": "martbg.jpg",
+      "price": 0,
+      "clicked": false,
+      "index": {
+        "address": "경기 부천시 경인로 532",
+        "call": "032-610-8000",
+        "영업시간": "10:00-22:00",
+        "link": "https://corporate.homeplus.co.kr/STORE/HyperMarket_view.aspx?sn=0043&ind=HOMEPLUS"
+      }
+    },
+    {
+      "locationX": 37.484453,
+      "locationY": 126.811122,
+      "title": "cinema",
+      "img": "cinema",
+      "name": "CGV 역곡",
+      "description": "1호선 역곡역에서 하차, 역곡 남부역 출구(도보 1분) 이용",
+      "thumbnail": "cinemabg.jpg",
+      "price": 0,
+      "clicked": false,
+      "index": {
+        "address": "경기 부천시 경인로 505 역곡 하이뷰 6층",
+        "call": "1544-1122",
+        "영업시간": "",
+        "link": "http://www.cgv.co.kr/theaters/?areacode=02&theaterCode=0029&date=20140707"
+      }
+    },
+    {
+      "locationX": 37.489538,
+      "locationY": 126.824513,
+      "title": "atm",
+      "img": "atm",
+      "name": "GS25 온수동진점 ATM",
+      "description": "온수역 2번 출구에서406m",
+      "thumbnail": "atmbg.jpg",
+      "price": 0,
+      "clicked": false,
+      "index": {
+        "address": "서울 구로구 경인로 19 (온수동) 동진상가 107-112",
+        "call": "",
+        "영업시간": "07:00 - 21:00",
+        "link": ""
+      }
+    }
+  ],
+  "review": [
+    {
+      "comment": "좋아요\n",
+      "placeName": "자연드림 성공회대점",
+      "id": 1
+    },
+    {
+      "comment": "안녕하세요",
+      "placeName": "커피클래식",
+      "id": 2
+    },
+    {
+      "comment": "안녕하세요123",
+      "placeName": "커피클래식",
+      "id": 3
+    },
+    {
+      "comment": "안녕하세요123456",
+      "placeName": "커피클래식",
+      "id": 4
+    },
+    {
+      "comment": "ㄴㅁㅇㅇㄴㅁㅁㅇㄴ",
+      "placeName": "이디야 성공회대점",
+      "id": 5
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+.detailCard {
+  width: 390px;
+  height: 100vh;
+  position: relative;
+  z-index: 2;
+  margin-left: 15px;
+  background-color: white;
+}
+
+.detailCard-closed {
+  width: 390px;
+  position: relative;
+  z-index: 2;
+  margin-left: 15px;
+}
+
+.thumbnailBox {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  width: 390px;
+  height: 250px;
+  border-radius: 3px;
+}
+.thumbnailBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.header {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.infoSection_title {
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  background-color: white;
+  align-items: center;
+}
+
+.infoSection_title h1 {
+  margin: 0 10px 0 0;
+}
+.infoSection_title h4 {
+  margin: 0;
+  color: #70757a;
+}
+
+.infoSection_tablist_container {
+  text-align: center;
+  background: rgba(40, 44, 42, 0.05);
+}
+.infoSection_tablist {
+  display: flex;
+  overflow: auto;
+  height: 40px;
+  border: 3px solid transparent;
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+.infoSection_tablist_li {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f7f7;
+  height: 100%;
+  margin: 0 2px;
+  flex: 1;
+  cursor: pointer;
+}
+.tablist_isClicked {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0 2px;
+  flex: 1;
+  background-color: #0475f4;
+}
+
+.infoSection_tablist li span {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-size: 1em;
+  vertical-align: middle;
+}
+.spanWhite {
+  color: white;
+}
+.spanGray {
+  color: #74777b;
+}

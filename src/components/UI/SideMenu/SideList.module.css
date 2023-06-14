@@ -1,36 +1,149 @@
 .listBox {
-  padding: 15px;
-  height: 80%;
+  width: 390px;
+  height: 100%;
+}
+.listBox h2 {
+  margin-left: 15px;
+}
+.h2Box {
+  margin-top: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.scroll {
+  height: 70%;
   overflow: auto;
 }
-.listBox::-webkit-scrollbar {
+.scroll::-webkit-scrollbar {
   width: 7px; /* 스크롤바의 너비 */
 }
 
-.listBox::-webkit-scrollbar-thumb {
-  height: 80%; /* 스크롤바의 길이 */
+.scroll::-webkit-scrollbar-thumb {
+  height: 40%; /* 스크롤바의 길이 */
   background: #c4c6c8; /* 스크롤바의 색상 */
   border-radius: 10px;
 }
 
-.listBox::-webkit-scrollbar-track {
+.scroll::-webkit-scrollbar-track {
   background: rgba(233, 236, 239); /*스크롤바 뒷 배경 색상*/
 }
 
 .thumbnailBox {
   display: flex;
+  position: relative;
   justify-content: center;
   overflow: hidden;
-  height: 180px;
+  height: 200px;
+  border-radius: 5px;
 }
-.thumbnailImage {
+.thumbnailBox img {
+  object-fit: cover;
   width: 100%;
   height: 100%;
 }
+
 .nameText {
+  margin-top: 10px;
   margin-bottom: 0;
 }
 .descriptionText {
   word-break: break-all;
-  margin-top: 0;
+  margin-top: 5px;
+
+  color: #565656;
+}
+
+.place-price-toggleBtn {
+  width: 100px;
+  height: 25px;
+}
+.tab_container {
+  display: block;
+  padding: 5px 50px 5px 50px;
+}
+.tab_list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 45px;
+  border-radius: 23px;
+  background: #f5f6f9;
+}
+.tab_item {
+  display: list-item;
+  flex: 1;
+}
+.tab_btn {
+  width: 100%;
+  height: 45px;
+  padding-top: 1px;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 23px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #838e9c;
+  cursor: pointer;
+}
+.tab_active {
+  width: 100%;
+  height: 45px;
+  padding-top: 1px;
+  border: 1px solid transparent;
+  border-radius: 23px;
+  font-size: 16px;
+  font-weight: 600;
+  background: #fff;
+  border-color: #006cff;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.05);
+  color: #006cff;
+  font-weight: 700;
+  cursor: pointer;
+}
+.mainContainer {
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 15px;
+}
+.mainContainer:hover {
+  background-color: #ecf4ff;
+}
+.listContainer {
+  border-radius: 15px;
+  border: 1px solid #c9c9c9;
+  margin: 15px;
+  padding: 0;
+  background-color: #fafbfd;
+}
+.listContainer li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.listContainer li:hover {
+  background-color: #ecf4ff;
+}
+.listContainer li span:nth-child(1) {
+  display: inline-block;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+.bookmark {
+  position: absolute;
+  background-color: #f5f5f5;
+  border-radius: 50%;
+
+  width: 30px;
+  height: 30px;
+  left: 9px;
+  top: 9px;
+}
+.bookmark:hover {
+  background-color: #ededed;
+}
+.bookmark_star {
+  width: 30px;
+  height: 30px;
+  color: rgb(255, 200, 0);
 }

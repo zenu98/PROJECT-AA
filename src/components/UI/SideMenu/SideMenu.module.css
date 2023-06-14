@@ -1,58 +1,101 @@
-.menuContainer {
+.abc {
+  display: flex;
   position: absolute;
-  width: 450px;
-  left: 0;
+}
+.baseCard {
+  display: flex;
+  position: absolute;
+  height: 100vh;
+  z-index: 2;
+  transition: 0.3s ease;
+  box-shadow: 3px 0px 3px rgba(0, 0, 0, 0.1);
+}
+.baseCardClose {
+  display: flex;
+  position: absolute;
+  height: 100vh;
+  z-index: 2;
+  transform: translateX(-100%);
+  transition: 0.3s ease;
+  box-shadow: 3px 0px 3px rgba(0, 0, 0, 0.1);
+}
+
+.menuContainer {
+  position: relative;
+  width: 390px;
   z-index: 2;
   height: 100vh;
+  box-shadow: 3px 0px 3px rgba(0, 0, 0, 0.1);
 }
-.toggleCloseBtn {
+/* .menuContainerClose {
+  position: relative;
+  width: 390px;
+
+  z-index: 2;
+  height: 100vh;
+  transition: 0.3s ease;
+} */
+/* .toggleCloseBtn {
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 1.2rem;
+  width: 1.5rem;
   height: 3rem;
-  background: rgb(227, 222, 222);
+  background: white;
   border-radius: 10%;
-  right: 16%;
+  left: 390px;
   top: 45%;
-  z-index: 2;
+  z-index: 1;
   transition: 0.3s ease;
   cursor: pointer;
-}
-.toggleOpenBtn {
+  border: 1px solid #cbcbcb;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1), 0px -1px 3px rgba(0, 0, 0, 0.1);
+} */
+.toggleBtn {
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 1.2rem;
+  width: 1.5rem;
   height: 3rem;
-  background: rgb(227, 222, 222);
+  background: white;
   border-radius: 10%;
-  right: 96%;
+  left: 390px;
   top: 45%;
-  z-index: 2;
+  z-index: 1;
   transition: 0.3s ease;
   cursor: pointer;
+  border: 1px solid #cbcbcb;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1), 0px -1px 3px rgba(0, 0, 0, 0.1);
+}
+.toggleBtn-detail-isShown {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.5rem;
+  height: 3rem;
+  background: white;
+  border-radius: 10%;
+  left: 795px;
+  top: 45%;
+  z-index: 1;
+  transition: 0.3s ease;
+  cursor: pointer;
+  border: 1px solid #cbcbcb;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1), 0px -1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .sideMenu {
-  position: absolute;
-  width: 80%;
-  left: 0;
+  overflow: hidden;
   background-color: white;
-  z-index: 2;
-  height: 100vh;
-  transition: 0.3s ease;
-}
-.sideMenuClose {
   position: absolute;
-  width: 25%;
-  left: -30%;
-  background-color: white;
-  z-index: 2;
   height: 100vh;
-  transition: 0.3s ease;
+  /* width: 100%;
+  z-index: 2;
+
+  transition: 0.3s ease; */
 }
 
 .list {

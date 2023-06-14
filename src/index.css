@@ -1,4 +1,11 @@
 body {
   margin: 0;
   height: 100%;
+  box-sizing: content-box;
+  font-family: "NotoSansKR-Regular";
+}
+@font-face {
+  font-family: "NotoSansKR-Regular";
+  font-weight: 300;
+  src: url("/public/font/NotoSansKR-Regular.woff") format("woff");
 }

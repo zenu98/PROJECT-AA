@@ -1,6 +1,6 @@
 .listContainer {
   position: relative;
-  padding: 10px;
+  padding: 5px;
 }
 
 .list {
@@ -50,6 +50,10 @@ ul {
   cursor: pointer;
   padding: 10px;
 }
+.iconContainer_selectBox {
+  display: flex;
+  align-items: center;
+}
 .tabName {
   font-size: 1rem;
 }
@@ -62,4 +66,59 @@ ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+.selectBox {
+  height: 1px;
+  width: 100px;
+}
+
+.selectBox-container {
+  background-color: bisque;
+}
+
+.profile_container {
+  display: flex;
+  position: relative;
+  height: 40px;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 5px;
+}
+.profile_to_login {
+  width: 25px;
+  height: 25px;
+  padding: 5px;
+  margin-right: 15px;
+  color: gray;
+}
+.profile_isLogin {
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  color: #0475f4;
+  border-radius: 50%;
+  border: 1px solid #0475f4;
+}
+.profile_color_gray {
+  color: gray;
+}
+.logoutBtn {
+  border: none;
+  background-color: white;
+}
+.logoutBtn_icon {
+  width: 35px;
+  height: 35px;
+  margin-right: 5px;
+  padding: 5px;
+  margin-top: 3px;
+  border: none;
+  color: gray;
+  cursor: pointer;
+}
+.iconContainer-priceComparison {
+  pointer-events: none;
+  background-color: rgb(255, 255, 255);
+  color: rgb(173, 173, 173);
 }

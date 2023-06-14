@@ -1,0 +1,35 @@
+.place_section_container {
+  display: block;
+}
+
+.place_section_contents {
+  padding: 4px 18px;
+
+  .place_section {
+    position: relative;
+    padding: 10px 0;
+    font-family: -apple-system, BlinkMacSystemFont, helvetica,
+      "Apple SD Gothic Neo", sans-serif;
+    .place_section_icon {
+      margin-right: 10px;
+    }
+
+    &.border {
+      border-top: 1px solid;
+      border-top-color: #ecf0f2;
+      .place_section_icon {
+        margin-right: 10px;
+      }
+    }
+    .link {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      a {
+        color: inherit;
+        text-decoration: none;
+        color: rgb(147, 169, 226);
+      }
+    }
+  }
+}

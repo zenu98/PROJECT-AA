@@ -1,71 +1,59 @@
-import { createSlice, current } from "@reduxjs/toolkit";
+import { createSlice } from "@reduxjs/toolkit";
 
 const markerSlice = createSlice({
   name: "marker",
   initialState: {
-    markerType: "All",
+    markerType: "all",
+    tabType: "개요",
     selectedMarker: "",
+    selectedItem: "",
+    selectedTab: "",
+    tabIsClicked: false,
     markerIsClicked: false,
-    dummy: [
-      {
-        locationX: 37.4882,
-        locationY: 126.8249,
-        title: "cafe",
-        img: "coffee",
-        name: "Dummy1",
-        description: "comfortable, classic cafe",
-        thumbnail: "dummybg1.jpg",
-      },
-      {
-        locationX: 37.504,
-        locationY: 126.8249,
-        title: "cafe",
-        img: "coffee",
-        name: "Dummy2",
-        description: "low price, high quality cafe",
-        thumbnail: "dummybg4.jpg",
-      },
-      {
-        locationX: 37.48,
-        locationY: 126.84,
-        title: "cafe",
-        img: "coffee",
-        name: "Dummy5",
-        description: "aaaaaaaaaaaaaaaaaaaa",
-        thumbnail: "dummybg5.jpg",
-      },
-      {
-        locationX: 37.489,
-        locationY: 126.84,
-        title: "cinema",
-        img: "dummy",
-        name: "Dummy3",
-        description: "aaaaaaaaaaaaaaaaaaaa",
-        thumbnail: "dummybg5.jpg",
-      },
-      {
-        locationX: 37.49,
-        locationY: 126.83,
-        title: "cinema",
-        img: "dummy",
-        name: "Dummy4",
-        description: "bbbbbbbbbbbbbb",
-        thumbnail: "dummy.png",
-      },
-    ],
+    itemIsClicked: false,
+    data: [],
+    review: [],
   },
   reducers: {
+    fetchData(state, action) {
+      state.data = action.payload.data;
+      console.log(state.data);
+    },
+    fetchReviewData(state, action) {
+      state.review = action.payload.data;
+      console.log(state.review);
+    },
     markerTypeHandler(state, action) {
       const markerType = action.payload;
       console.log(action.payload);
       state.markerType = markerType.title;
       state.markerIsClicked = false;
     },
+    tabTypeHandler(state, action) {
+      const tabType = action.payload;
+      console.log(action.payload);
+      state.tabType = tabType.title;
+      // state.tabIsClicked = false;
+    },
     markerListHandler(state, action) {
       const markerType = action.payload;
       console.log(action.payload);
       state.selectedMarker = markerType.name;
       state.markerIsClicked = true;
+    },
+    selectedItemHandler(state, action) {
+      const selectedItem = action.payload;
+      console.log(action.payload);
+      state.selectedItem = selectedItem.name;
+      state.itemIsClicked = true;
+    },
+    selectedTabHandler(state, action) {
+      const selectedTab = action.payload;
+      console.log(action.payload);
+      state.selectedTab = selectedTab;
+    },
+    itemIsNotClicked(state) {
+      state.itemIsClicked = false;
     },
   },
 });

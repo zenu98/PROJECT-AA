@@ -1,0 +1,13 @@
+.selectBox__control {
+  width: 110px;
+  height: 42px;
+}
+
+.selectBox__control[class*="__control"]:hover {
+  border-color: #0475f4;
+}
+.priceComparison {
+  pointer-events: none;
+  background-color: rgb(255, 255, 255);
+  color: rgb(173, 173, 173);
+}

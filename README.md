@@ -63,7 +63,46 @@ Give an example
 - ### 로그인
 ![로그인](https://github.com/zenu98/PROJECT-AA/assets/90780629/d64b2fc3-f862-45b2-8047-c9d84528c0a9)
 
-인증토큰을 통해 간단한 인증절차를 통한 회원가입과 로그인 기능을 구현하였다.
+```javascript
+import { redirect } from "react-router-dom";
+
+export function getTokenDuration() {
+  const storedExpirationDate = localStorage.getItem("expiration");
+  const expirationDate = new Date(storedExpirationDate);
+  const now = new Date();
+  const duration = expirationDate.getTime() - now.getTime();
+  return duration;
+}
+
+export function getAuthToken() {
+  const token = localStorage.getItem("token");
+  if (!token) {
+    return null;
+  }
+  const tokenDuration = getTokenDuration();
+  if (tokenDuration < 0) {
+    return "EXPIRED";
+  }
+  return token;
+}
+
+export function tokenLoader() {
+  return getAuthToken();
+}
+
+export function checkAuthLoader() {
+  const token = getAuthToken();
+
+  if (token) {
+    return redirect("/");
+  }
+
+  return null;
+}
+
+```
+로그인은 백엔드 담당 조원과 같이 진행해야 했지만 진행에 차질이 생겨 JSON토큰을 이용한 인증절차를 프론트엔드에서 담당하여 간단한 로그인 기능을 구현했다.
+
 
 ![로그인시화면](https://github.com/zenu98/PROJECT-AA/assets/90780629/3e8ff903-1f2b-45ce-9fb4-86fc32bf8be4)
 

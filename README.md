@@ -1,29 +1,11 @@
 # Project-AA 
 React로 구현한 웹페이지
-- 학교 주변 카페와 편의시설들을 지도화면으로 구현한 사이트
-
-# Project-AA 
-React로 구현한 웹페이지
-- 학교 주변 카페와 편의시설들을 지도화면으로 구현한 사이트
-
-
-## 프로젝트 정보
-성공회대학교 소프트웨어공학과 캡스톤 프로젝트
-개발기간: 2023.03 ~ 2023.06
-
-
+- 학교 주변 카페와 편의시설들을 네이버지도API를 이용해 지도화면으로 구현한 사이트
 
 ## 프로젝트 소개
+성공회대학교 소프트웨어공학과 캡스톤 프로젝트
+- 개발기간: 2023.03 ~ 2023.06
 
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
 
 ## 기술 스택
 
